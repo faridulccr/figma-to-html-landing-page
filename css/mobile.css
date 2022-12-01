@@ -1,0 +1,180 @@
+@media only screen and (max-width: 768px) {
+    .banner-text {
+        width: 90%;
+        top: calc(12% + 126px / 2);
+    }
+    .banner-text h1 {
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+    }
+    .banner-text p {
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+    }
+    .banner-sec .banner-form {
+        display: block;
+        width: 94%;
+        height: 402px;
+        top: 90%;
+        padding: 4px 18px 18px;
+    }
+    .banner-form .div-btn {
+        height: 16.67%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #ddd6d8;
+    }
+    .banner-form .div-btn::before {
+        border-left: none;
+    }
+    .banner-form .div-btn:nth-of-type(5) {
+        border-bottom: none;
+    }
+    .banner-form .div-btn:nth-of-type(6) {
+        flex-direction: row;
+        border-bottom: none;
+    }
+
+    /*======================================
+    content area style
+    =========================================*/
+    .content-sec {
+        padding-top: 180px;
+    }
+    .content-sec .car-logo-sec .col-md-2 {
+        margin-bottom: 20px;
+    }
+
+    .sliding-car-container {
+        width: 300%;
+    }
+    .sliding-car-container .sliding-car {
+        width: 50%;
+    }
+
+    /******** Find car sec css ************/
+    .find-car-sec .find-nav {
+        flex-direction: column;
+    }
+    .find-nav .btn-container {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    /*====================================
+        makes sec css for medium devices
+    =====================================*/
+    .makes-sec {
+        display: block;
+    }
+    .makes-sec .popular-makes {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .popular-makes .bran-logo {
+        margin: 10px 0;
+    }
+    .makes-sec .popular-makes .brand-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 200%;
+    }
+    .other-makes-sec {
+        width: 100%;
+        margin-top: 30px;
+    }
+    /*********** Footer sec css *************/
+    .main-footer-sec .part1 {
+        justify-content: center;
+    }
+    .main-footer-sec .container {
+        display: block;
+        position: relative;
+        padding-top: 50px;
+        padding: 50px 0 0;
+    }
+    .main-footer-sec .part2 {
+        justify-content: start;
+        padding: 0 20px;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+    .main-footer-sec .part2 p:nth-of-type(2) {
+        margin-left: auto;
+    }
+}
+
+/* less than 768 px */
+@media only screen and (max-width: 600px) {
+    .car-sec .car-cards-container {
+        display: block;
+    }
+    .car-sec .car-card {
+        margin-bottom: 20px;
+    }
+    .main-footer-sec .part1 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .car-sec .car-card .car-price {
+        grid-template-columns: 1fr 1fr;
+    }
+    .car-sec .car-card .car-price div {
+        text-align: center;
+    }
+    .car-sec .car-card .car-price div:nth-of-type(3) {
+        grid-column: 1 / span 2;
+    }
+    .content-sec .car-sec {
+        margin-bottom: 50px;
+    }
+    .makes-sec .popular-makes .brand-container {
+        width: 300%;
+    }
+    .popular-makes .brand-container .bran-logo img {
+        margin: 0;
+    }
+    .btn-container #body-types {
+        display: none;
+    }
+}
+/********** Car Slider section ************/
+@media only screen and (max-width: 450px) {
+    .car-slider-sec .slider-title {
+        display: block;
+    }
+    .car-slider-sec .slider-title h2 {
+        text-align: center;
+    }
+    .slider-title .arrow-sign {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .sliding-car-container {
+        width: 600%;
+    }
+    .sliding-car-container .sliding-car {
+        width: 100%;
+    }
+    .other-makes-sec .other-makes {
+        display: block;
+    }
+    .other-makes .other-names-1 {
+        width: 100%;
+    }
+    .other-makes .other-names-2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .banner-sec .banner-form {
+        width: 94%;
+    }
+}

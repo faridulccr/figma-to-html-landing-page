@@ -1,0 +1,561 @@
+/*======================================
+    Common css style
+=========================================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*======================================
+    Header and Navbar area style
+=========================================*/
+header nav .navbar-brand img {
+    height: 40px;
+    width: 40px;
+}
+header nav ul li .nav-link {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+    margin-left: 20px;
+}
+header nav ul li .nav-link.sign-up {
+    font-size: 14px;
+    line-height: 21px;
+    color: #9a9ea7;
+}
+header nav ul li .nav-link.sign-up img {
+    height: 32px;
+    width: 32px;
+    background: #f5f6f7;
+    border-radius: 10px;
+    padding: 9px;
+}
+
+/*======================================
+    Banner area style
+=========================================*/
+.banner-sec {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 575px;
+    margin-top: 15px;
+    position: relative;
+    box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.65);
+}
+.banner-text-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 10, 52, 0.700577);
+    backdrop-filter: blur(2.71828px);
+    z-index: 4;
+}
+.banner-text {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+}
+.banner-text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.22;
+    letter-spacing: -0.304762px;
+    color: #ffffff;
+}
+.banner-text p {
+    width: 77%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.23;
+    color: #ffffff;
+    margin: 26px auto 0;
+}
+.banner-sec .banner-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 120px;
+    align-items: center;
+    height: 82px;
+    width: 66.65%;
+    padding: 0 18px;
+    background: #ffffff;
+    box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.55);
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+.banner-form .div-btn {
+    padding: 0 18px;
+    position: relative;
+}
+.banner-form .div-btn::before {
+    content: "";
+    border-left: 1px solid #cfc2c6;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: calc(48% - 32px / 2);
+}
+.banner-form .div-btn:nth-of-type(6) {
+    background-color: #7963f0;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-form .div-btn:nth-of-type(1)::before,
+.banner-form .div-btn:nth-of-type(6)::before {
+    border: none;
+}
+.banner-form .div-btn span.mute {
+    font-style: normal;
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.banner-form .div-btn select {
+    display: block;
+    width: 100%;
+    border: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+}
+.banner-form .div-btn select.mute {
+    color: #9a9ea7;
+}
+.banner-form .div-btn:nth-of-type(1) {
+    padding-left: 0;
+}
+.banner-form .div-btn:nth-of-type(6) img {
+    width: 18px;
+    margin-right: 10px;
+}
+.banner-form .div-btn:nth-of-type(6) button {
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #fff;
+    background-color: #7963f0;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*======================================
+    content area style
+=========================================*/
+.content-sec {
+    padding-top: 120px;
+}
+.content-sec h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.29;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+    padding: 0;
+    margin: 0;
+}
+/********** Car section css ***********/
+.content-sec .car-sec {
+    margin-top: 64px;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+.car-sec h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.car-sec .car-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 29px;
+}
+.car-sec .car-card {
+    border: 1px solid #e4e6e8;
+    border-radius: 14px;
+    padding: 25px 25px 20px;
+}
+.car-sec .car-card img {
+    width: 100%;
+    height: 178px;
+    border-radius: 8px;
+}
+.car-sec .car-card h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #0d0a19;
+    margin: 0;
+    padding: 0;
+}
+.car-sec .car-card .car-details p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.car-sec .car-card .car-details .dot {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.45;
+    text-align: center;
+    letter-spacing: -0.0916667px;
+    color: #9a9ea7;
+}
+.car-sec .car-card .car-brand {
+    width: 100%;
+    height: 38px;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+}
+.car-sec .car-card .car-brand img {
+    grid-row: 1 / span 2;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e4e6e8;
+    border-radius: 8px;
+    padding: 8px;
+}
+.car-sec .car-card .car-brand h5 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+    padding-left: 12px;
+    margin: 0;
+}
+.car-sec .car-card .car-brand p,
+.car-sec .car-card .car-price p {
+    padding-left: 12px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.car-sec .car-card .car-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+.car-sec .car-card .car-price span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+}
+.car-sec .car-card .car-price p {
+    padding: 0;
+}
+.car-sec .car-card .car-price button {
+    background: #7963f0;
+    border-radius: 10px;
+    width: 116px;
+    height: 46px;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/*************** Car Slider css *****************/
+.car-slider-sec {
+    margin-bottom: 100px;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+.car-slider-sec .slider-title {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.slider-title .arrow-sign {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.slider-title .arrow-sign .car-number {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9a9ea7;
+}
+.slider-title .arrow-sign img {
+    width: 46px;
+    height: 46px;
+    padding: 14px;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.sliding-car-container {
+    width: 150%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliding-car-container .sliding-car {
+    width: 25%;
+    text-align: center;
+    padding: 10px 20px;
+}
+.sliding-car-container .sliding-car img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.sliding-car-container .sliding-car h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0d0a19;
+}
+.sliding-car-container .sliding-car button {
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    background: rgba(228, 224, 224, 0.85);
+
+    border-radius: 8px !important;
+    color: #7963f0 !important;
+}
+
+/*===================================
+    Find car section css
+======================================*/
+.find-nav .btn-container button {
+    border: none;
+    outline: none;
+    width: 110px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+    background-color: #fff;
+}
+.btn-container button.active {
+    color: #0d0a19;
+    border: 1px solid #ddd8d8;
+    border-radius: 8px;
+}
+
+/*********** Makes section css *************/
+.makes-sec {
+    display: flex;
+    column-gap: 4%;
+}
+.makes-sec .makes-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.makes-sec .popular-makes {
+    width: 31.5%;
+    /* border: 1px solid black; */
+}
+.popular-makes .bran-logo {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+}
+.popular-makes .bran-logo:nth-of-type(4) {
+    margin-bottom: 0;
+}
+.popular-makes .bran-logo img {
+    margin-right: 15px;
+    width: 70px;
+    height: 65px;
+    padding: 18px 15px;
+}
+.popular-makes .bran-logo .logo-name h5 {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0d0a19;
+}
+.popular-makes .bran-logo .logo-name p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+    line-height: 0.4;
+}
+
+/************ other makes section *************/
+.other-makes-sec {
+    width: 64.5%;
+}
+.other-makes {
+    display: flex;
+    column-gap: 20%;
+}
+.other-makes .other-names-1 {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+.other-makes .other-names-2 {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+.other-item .vehicle-name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0d0a19;
+}
+.other-item .number {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    color: #0d0a19;
+}
+
+/*=================================
+Footer sec css
+=====================================*/
+.footer-link-sec {
+    background-color: #f5f6f7;
+    padding-top: 45px;
+}
+.footer-link-sec .link-container {
+    padding-left: 56px;
+}
+.footer-link-sec .link-container h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+}
+.footer-link-sec .link-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-link-sec .link-container ul li a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.36;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.main-footer-sec .container {
+    padding: 17px 0 0 56px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.main-footer-sec .part1 {
+    display: flex;
+}
+.main-footer-sec .part1 .bold-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #0d0a19;
+    margin-right: 14px;
+}
+.main-footer-sec .part2 {
+    display: flex;
+    justify-content: end;
+}
+.main-footer-sec .part1 .copyright,
+.main-footer-sec .part2 p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    color: #9a9ea7;
+}
+.main-footer-sec .part2 p {
+    font-weight: 700;
+}
+.main-footer-sec .part2 p:nth-of-type(2) {
+    margin-left: 15px;
+}
+.main-footer-sec .part2 img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
